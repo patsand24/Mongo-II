@@ -13,10 +13,10 @@ const PostSchema = new mongoose.Schema({
   soID: { type: Number, required: true, },
   parentID: Number,
   url: { type: String, required: true, },
-  title: { type: String, required: true },
+  title: { type: String },
   body: { type: String, required: true, },
   score: { type: Number, required: true, },
-  tags: [],
+  tags: [String],
   acceptedAnswerID: Number,
   user: {
     soUserID: Number,
